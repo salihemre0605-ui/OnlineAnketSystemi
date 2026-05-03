@@ -10,7 +10,7 @@ require_once 'src/TextQuestion.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SurveyMaster - Online Anket Sistemi</title>
+    <title>NanoSurvey - Online Anket Sistemi</title>
     <style>
         :root {
             --primary-color: #4a90e2;
@@ -157,13 +157,13 @@ require_once 'src/TextQuestion.php';
         new MultipleChoice(1, "En çok hangi işletim sisteminde kod yazmayı seviyorsunuz?", ["Windows", "macOS", "Linux"]),
         new MultipleChoice(2, "Favori IDE / Editörünüz hangisi?", ["VS Code", "JetBrains", "Sublime Text", "Notepad++"]),
         new MultipleChoice(3, "Yapay zeka araçlarını ne sıklıkla kullanıyorsunuz?", ["Her zaman", "Ara sıra", "Sadece tıkandığımda", "Hiç"]),
-        new TextQuestion(4, "Bilgisayar Programcılığı okurken en çok zorlandığınız ders hangisi?"),
+        new MultipleChoice(4, "Hangi şirkette çalışmak istersiniz?", ["Aselsan", "Havelsan" ,"Roketsan", "Tusaş"]),
         new MultipleChoice(5, "Veritabanı tercihinizi hangisinden yana kullanırsınız?", ["MySQL", "PostgreSQL", "MongoDB", "SQLite"]),
         new MultipleChoice(6, "Bir projede en çok hangi aşama ilginizi çekiyor?", ["Tasarım (Frontend)", "Mantık (Backend)", "Veritabanı"]),
-        new TextQuestion(7, "Sizce 5 yıl sonra yazılım dünyası nasıl görünecek?"),
+        new MultipleChoice(7, "Yazılımda en sevdiğiniz dil hangisidir?", ["Python", "JavaScript", "C#", "C++"]),
         new MultipleChoice(8, "Kod yazarken olmazsa olmaz içeceğiniz?", ["Kahve", "Çay", "Enerji İçeceği", "Su"]),
         new MultipleChoice(9, "Git uygulamasını ne sıklıkla kullanırsınız?", ["Her zaman", "Arada", "İşim Düşünce", "Hiç ."]),
-        new TextQuestion(10, "NanoSurvey için bir geliştirme öneriniz var mı?")
+        new MultipleChoice(10, "En sevdiğiniz BP bölümü dersi hangisidir?", ["Veri Tabanı","Yazılım Geliştirme", "İnternet Teknolojisi", "Bilişim Hukuku"])
 
         
     ];
