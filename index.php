@@ -163,7 +163,7 @@ require_once 'src/TextQuestion.php';
         new TextQuestion(7, "Sizce 5 yıl sonra yazılım dünyası nasıl görünecek?"),
         new MultipleChoice(8, "Kod yazarken olmazsa olmaz içeceğiniz?", ["Kahve", "Çay", "Enerji İçeceği", "Su"]),
         new MultipleChoice(9, "Git uygulamasını ne sıklıkla kullanırsınız?", ["Her zaman", "Arada", "İşim Düşünce", "Hiç ."]),
-        new TextQuestion(10, "SurveyMaster için bir geliştirme öneriniz var mı?")
+        new TextQuestion(10, "NanoSurvey için bir geliştirme öneriniz var mı?")
 
         
     ];
@@ -174,7 +174,9 @@ require_once 'src/TextQuestion.php';
         if ($q instanceof MultipleChoice) {
             echo "<div class='options-list'>";
             foreach ($q->getOptions() as $option) {
-                echo "<div class='option-item' onclick='selectOption(this)'>$option</div>";
+                echo "<input type='radio' name='soru_" . $q->getId() . "' value='" . htmlspecialchars($option) . "' required>";
+                echo "<span>" . $option . "</span>";
+                echo "</label>";
             }
             echo "</div>";
         } else {
@@ -183,7 +185,7 @@ require_once 'src/TextQuestion.php';
         echo "</div>";
     }
     ?>
-     <button class="btn-submit" onclick="alert('SurveyMaster: Anketiniz başarıyla gönderildi!')">Anketi Tamamla</button>
+     <button class="btn-submit" onclick="alert('NanoMaster: Anketiniz başarıyla gönderildi!')">Anketi Tamamla</button>
        
 
    

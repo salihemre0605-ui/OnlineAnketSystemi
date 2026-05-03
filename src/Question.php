@@ -12,5 +12,9 @@ class Question {
     public function getTitle() {
         return $this->title;
     }
+    public function getId() {
+    return $this->id;
 }
+}
+
 ?>
