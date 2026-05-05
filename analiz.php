@@ -41,7 +41,56 @@ while ($soruRow = $soruBulucu->fetch(PDO::FETCH_ASSOC)) {
         h3 { border-left: 5px solid #1a73e8; padding-left: 10px; color: #444; }
     </style>
 </head>
+
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- ÜST MENÜ (NAVBAR) BAŞLANGICI -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" href="index.php">📊 Anket Sistemi</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="anaMenu">
+      <ul class="navbar-nav me-auto">
+        <!-- Açılır Menü (Dropdown) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="anketDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            📋 Anketler
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="anketDropdown">
+            <li><a class="dropdown-item" href="index.php">Öğrenci Anketi</a></li>
+            <li><a class="dropdown-item" href="sporcu.php">Sporcu Anketi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="analiz.php">📈 Sonuç Analizleri</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ÜST MENÜ BİTİŞİ -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+
+
 <body>
+
 
 <div class="container">
     <h1>📊 Anket Veri Analizi</h1>
@@ -82,4 +131,10 @@ while ($soruRow = $soruBulucu->fetch(PDO::FETCH_ASSOC)) {
     });
 </script>
 </body>
+
+
+
+
+
+
 </html>
