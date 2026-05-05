@@ -155,25 +155,10 @@ require_once 'src/TextQuestion.php';
 
 <body>
 
-<!-- NAVBAR (Açılır Menü Dahil) -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-  <div class="container">
-    <a class="navbar-brand" href="home.php">📊 Anket Merkezi</a>
-    <div class="collapse navbar-collapse" id="anaMenu">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">📋 Anket Seçin</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="index.php">Öğrenci Anketi</a></li>
-            <li><a class="dropdown-item" href="sporcu.php">Sporcu Anketi</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="analiz.php">📈 Analizler</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
+
+    
+    
 
 
 

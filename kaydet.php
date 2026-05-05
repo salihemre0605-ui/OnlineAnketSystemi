@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($basarili > 0) {
         echo "<h2 style='color: #198754;'>Harika! $basarili adet cevap başarıyla kaydedildi! 🚀</h2>";
         echo "<br><br>";
-        echo "<a href='index.php' style='padding: 10px 20px; background: #0d6efd; color: white; text-decoration: none; border-radius: 5px; margin-right: 15px;'>Ana Sayfaya Dön</a>";
+        echo "<a href='home.php' style='padding: 10px 20px; background: #0d6efd; color: white; text-decoration: none; border-radius: 5px; margin-right: 15px;'>Ana Sayfaya Dön</a>";
         echo "<a href='analiz.php' style='padding: 10px 20px; background: #198754; color: white; text-decoration: none; border-radius: 5px;'>Grafikleri İncele</a>";
     } else {
         echo "<h2 style='color: #dc3545;'>Hiç veri kaydedilemedi. Şıkları seçtiğinden emin ol cürüm.</h2>";

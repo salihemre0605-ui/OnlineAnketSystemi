@@ -51,7 +51,7 @@ while ($soruRow = $soruBulucu->fetch(PDO::FETCH_ASSOC)) {
 <!-- ÜST MENÜ (NAVBAR) BAŞLANGICI -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
   <div class="container">
-    <a class="navbar-brand" href="index.php">📊 Anket Sistemi</a>
+    <a class="navbar-brand" href="home.php">📊 Anket Sistemi</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#anaMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
