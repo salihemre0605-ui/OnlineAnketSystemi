@@ -78,7 +78,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white fw-bold" href="#" data-bs-toggle="dropdown">Hızlı Menü</a>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="ogrenci_anketi.php">Öğrenci Anketi</a></li>
+            <li><a class="dropdown-item" href="index.php">Öğrenci Anketi</a></li>
             <li><a class="dropdown-item" href="sporcu.php">Sporcu Anketi</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="analiz.php">Analiz Paneli</a></li>
