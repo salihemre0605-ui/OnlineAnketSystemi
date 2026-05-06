@@ -30,7 +30,7 @@ Projeyi kendi yerel sunucunuzda (localhost) çalıştırmak için şu adımları
 5. `src/Database.php` dosyasını açarak veritabanı bağlantı ayarlarını (kullanıcı adı, şifre, db adı) kendi sisteminize göre güncelleyin.
 6. Tarayıcınızda `http://localhost/proje_klasor_adiniz/home.php` adresine giderek projeyi başlatın.
 
-## 📁 Proje Yapısı
+##  Proje Yapısı
 
 * `home.php` - Kullanıcı karşılama ve anket seçimi ana sayfası.
 * `ogrenci_anketi.php` - Eğitim ve teknoloji alışkanlıklarına dair soruları içerir.
