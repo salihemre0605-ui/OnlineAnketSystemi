@@ -18,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Formdan gelen tüm verileri döngüye sokuyoruz
     foreach ($_POST as $key => $value) {
         
-        // İçinde "soru" kelimesi geçen inputları yakala (soru1, soru_2, soru5 hepsi uyar)
+        // İçinde "soru" kelimesi geçen inputları yakala 
         if (strpos($key, 'soru') !== false) {
             
-            // SİHİRLİ DOKUNUŞ: Sadece rakamları ayıkla (soru5'ten 5'i, soru_6'dan 6'yı alır)
+            // SİHİRLİ DOKUNUŞ: Sadece rakamları ayıkla 
             $soru_id = preg_replace('/[^0-9]/', '', $key);
             $cevap = $value;
 
@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // İşlem bitince ekrana şık bir mesaj basalım
+    // İşlem bitince ekrana şık bir mesaj bas
     echo "<div style='font-family: sans-serif; text-align: center; margin-top: 50px;'>";
     if ($basarili > 0) {
         echo "<h2 style='color: #198754;'>Harika! $basarili adet cevap başarıyla kaydedildi! 🚀</h2>";

@@ -6,14 +6,14 @@ require_once 'src/Database.php';
 $database = new Database();
 $db = $database->getConnection();
 
-// 1. ADIM: Cevaplar tablosundaki benzersiz soru ID'lerini buluyoruz
+// : Cevaplar tablosundaki benzersiz soru ID'lerini buluyoruz
 $soruBulucu = $db->query("SELECT DISTINCT soru_id FROM cevaplar ORDER BY soru_id ASC");
 $tumAnalizler = [];
 
 while ($soruRow = $soruBulucu->fetch(PDO::FETCH_ASSOC)) {
     $s_id = $soruRow['soru_id'];
     
-    // 2. ADIM: Her bir soru ID'si için verilen cevapları ve sayılarını sayıyoruz
+    // : Her bir soru ID'si için verilen cevapları ve sayılarını sayıyoruz
     $analizSorgu = $db->prepare("SELECT cevap_metni, COUNT(*) as adet FROM cevaplar WHERE soru_id = :id GROUP BY cevap_metni");
     $analizSorgu->execute(['id' => $s_id]);
     $veriler = $analizSorgu->fetchAll(PDO::FETCH_ASSOC);
@@ -69,7 +69,7 @@ while ($soruRow = $soruBulucu->fetch(PDO::FETCH_ASSOC)) {
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="analiz.php">📈 Sonuç Analizleri</a>
+          <a class="nav-link" href="analiz.php"> Sonuç Analizleri</a>
         </li>
       </ul>
     </div>
@@ -115,7 +115,7 @@ while ($soruRow = $soruBulucu->fetch(PDO::FETCH_ASSOC)) {
     veriler.forEach((item, i) => {
         const ctx = document.getElementById('grafik_' + i).getContext('2d');
         new Chart(ctx, {
-            type: 'pie', // Pasta grafiği en tatlısı
+            type: 'pie', // Pasta grafiği 
             data: {
                 labels: item.etiketler,
                 datasets: [{

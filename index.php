@@ -1,5 +1,5 @@
 <?php
-// 1. ADIM: Hataları engellemek için dosyaları doğru sırayla çağırıyoruz
+// : Hataları engellemek için dosyaları doğru sırayla çağırıyoruz
 require_once 'src/Question.php'; 
 require_once 'src/MultipleChoice.php';
 require_once 'src/TextQuestion.php';
@@ -171,7 +171,7 @@ require_once 'src/TextQuestion.php';
 
 
 
-    // 2. ADIM: 10 Soruluk Dev Havuz
+    // : 10 Soruluk Dev Havuz
     $questions = [
         new MultipleChoice(1, "En çok hangi işletim sisteminde kod yazmayı seviyorsunuz?", ["Windows", "macOS", "Linux"]),
         new MultipleChoice(2, "Favori IDE / Editörünüz hangisi?", ["VS Code", "JetBrains", "Sublime Text", "Notepad++"]),

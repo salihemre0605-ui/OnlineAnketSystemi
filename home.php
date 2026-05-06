@@ -16,7 +16,7 @@
             color: #2d3436;
         }
 
-        /* Hero: Lacivert ve ağırbaşlı bir ton */
+        
         .hero-banner { 
             background: #0f172a; 
             padding: 100px 0 60px 0;
